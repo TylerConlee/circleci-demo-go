@@ -41,7 +41,7 @@ jobs:
             echo Failed waiting for Postgres && exit 1
 
       - run:
-          name: Run unit tests
+          name: Run unit test
           environment:
             CONTACTS_DB_URL: "postgres://circleci-demo-go@localhost:5432/circle_test?sslmode=disable"
             CONTACTS_DB_MIGRATIONS: /go/src/github.com/CircleCI-Public/circleci-demo-go/db/migrations
